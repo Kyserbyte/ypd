@@ -2,14 +2,21 @@
     "name": "kyserbyte/ypd",
     "description": "Ypd Php Decorator implements \"decorators/annotations and meta-programming\" in PHP, via doc comments.",
     "type": "library",
+    "keywords": [
+        "php",
+        "decorator",
+        "annotation",
+        "meta-programming"
+    ],
     "license": "MIT",
     "authors": [
         {
             "name": "Augusto Pace",
-            "email": "kyserbyte@gmail.com"
+            "email": "kyserbyte@gmail.com",
+            "role": "lead"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
