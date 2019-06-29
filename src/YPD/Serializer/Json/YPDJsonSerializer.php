@@ -3,16 +3,14 @@
 namespace YPD\Serializer\Json;
 
 use ReflectionClass;
-
+use JsonSerializable;
 
 /**
- * 
+ * This trait implements the json serializer for a class.
  */
 trait YPDJsonSerializer
 {
     private $__ypdReflector = null;
-
-    private $__ypdJsonProps = [];
 
     public function jsonSerialize()
     {
