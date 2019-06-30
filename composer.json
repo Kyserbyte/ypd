@@ -20,7 +20,9 @@
         "issues": "https://github.com/Kyserbyte/ypd/issues"
     },
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=5.4"
+    },
     "autoload": {
         "psr-4": {
             "YPD\\": "src/"
