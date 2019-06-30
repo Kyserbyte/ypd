@@ -25,4 +25,5 @@ with the declaration you can pass 2 arguments to the decorator.
 
 - **name**: specify a custom name for the property when exported to json
 - **if**: a Function that resolve to boolean. You can use it to implement a conditional logic for export the property. The Function must be declared in the same class of the property or in a trait used by the class and must be public.
+
 Take a look to [DemoJsonSerialize](demo/DemoJsonSerialize.php) class for more info about usage.
