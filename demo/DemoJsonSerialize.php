@@ -7,7 +7,7 @@ use JsonSerializable;
 
 class DemoJsonSerialize implements JsonSerializable
 {
-    use YPDJsonSerializer;
+    use YPDJsonSerializer, DemoJsonSerializeTrait;
 
     /**
      * Undocumented variable
@@ -41,11 +41,6 @@ class DemoJsonSerialize implements JsonSerializable
         $this->publicProp2 = 2;
         $this->publicProp3NoSerilize = "valueProp3NoSerialize";
         $this->sub1 = new DemoSubJsonSerializable();
-    }
-
-    public function canSerialize()
-    {
-        return true;
     }
 }
 
@@ -82,5 +77,14 @@ class DemoSubJsonSerializable implements JsonSerializable
         $this->subProp1 = "subValueProp1";
         $this->subProp2 = 22;
         $this->subProp3 = ['a', 'b', 'c'];
+    }
+}
+
+trait DemoJsonSerializeTrait
+{
+
+    public function canSerialize()
+    {
+        return true;
     }
 }

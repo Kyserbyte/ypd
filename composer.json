@@ -16,14 +16,20 @@
             "role": "lead"
         }
     ],
+    "support": {
+        "issues": "https://github.com/Kyserbyte/ypd/issues"
+    },
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
-            "YPD\\": "src/YPD"
-        },
-        "classmap": [
-            "src/"
-        ]
+            "YPD\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YPD\\Demo\\": "demo/",
+            "YPD\\Tests\\": "tests/"
+        }
     }
 }
