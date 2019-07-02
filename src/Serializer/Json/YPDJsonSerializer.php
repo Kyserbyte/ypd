@@ -3,7 +3,6 @@
 namespace YPD\Serializer\Json;
 
 use ReflectionClass;
-use JsonSerializable;
 
 /**
  * This trait implements the json serializer for a class.
