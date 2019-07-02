@@ -7,7 +7,7 @@ You can install the package with composer:
 `composer require kyserbyte/ypd`
 
 ## USAGE
-At the monent is implemented only the `ypd::jsonSerialize` decorator.
+At the monent is implemented only the `@ypdJsonSerialize` decorator.
 To _activate_ the decorator you have to implement the `JsonSerializable` interface in the class that you want to make _json serializable_ via the decorator. Then you have to add the `YPDJsonSerializer` trait to your class. This trait has an internal implementation of the method `jsonSerialize()` required by the `JsonSerializable` interface, so you need only to declare the `implements` statement in you class.
 Now you are able to use the decorator inside a doc comment, in order to declare what properties you want to _expose_ to json. 
 The decorator works for now only with the public properties of a class.
@@ -17,7 +17,7 @@ Inside a doc comment over your property, you need to declare the decorator with 
 
 ```
 /**
-* ypd::jsonSerialize(name=XX,if=YY) 
+* @ypdJsonSerialize(name=XX,if=YY) 
 */
 public $propName;
 ```

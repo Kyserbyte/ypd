@@ -13,7 +13,7 @@ class DemoJsonSerialize implements JsonSerializable
      * Undocumented variable
      *
      * @var [string]
-     * ypd::jsonSerialize
+     * @ypdJsonSerialize
      */
     public $publicProp1;
 
@@ -21,7 +21,7 @@ class DemoJsonSerialize implements JsonSerializable
      * Undocumented variable
      *
      * @var [int]
-     * ypd::jsonSerialize(name=customName1)
+     * @ypdJsonSerialize(name=customName1)
      */
     public $publicProp2;
 
@@ -31,7 +31,7 @@ class DemoJsonSerialize implements JsonSerializable
      * Undocumented variable
      *
      * @var [type]
-     * ypd::jsonSerialize(if=canSerialize)
+     * @ypdJsonSerialize(if=canSerialize)
      */
     public $sub1;
 
@@ -52,7 +52,7 @@ class DemoSubJsonSerializable implements JsonSerializable
      * Undocumented variable
      *
      * @var [string]
-     * ypd::jsonSerialize
+     * @ypdJsonSerialize
      */
     public $subProp1;
 
@@ -60,7 +60,7 @@ class DemoSubJsonSerializable implements JsonSerializable
      * Undocumented variable
      *
      * @var [int]
-     * ypd::jsonSerialize
+     * @ypdJsonSerialize
      */
     public $subProp2;
 
@@ -68,7 +68,7 @@ class DemoSubJsonSerializable implements JsonSerializable
      * Undocumented variable
      *
      * @var [array]
-     * ypd::jsonSerialize
+     * @ypdJsonSerialize
      */
     public $subProp3;
 

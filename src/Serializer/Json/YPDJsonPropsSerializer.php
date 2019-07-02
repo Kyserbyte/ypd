@@ -62,7 +62,7 @@ class YPDJsonPropsSerializer
 
     private function __extractDecorator($comment)
     {
-        $decPos = strpos($comment, "ypd::jsonSerialize");
+        $decPos = strpos($comment, "@ypdJsonSerialize");
         $decorator = null;
         if ($decPos !== false) {
             $lineEnd = strpos($comment, "\n", $decPos);
